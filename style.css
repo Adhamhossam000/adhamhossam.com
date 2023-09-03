@@ -3,6 +3,10 @@
   font-family: myFont;
   src: url(BambinoNew-Bold.ttf);
 }
+@font-face {
+  font-family: myfont2;
+  src: url(ORGANICAL\ PERSONAL\ USE.ttf);
+}
 
 * {
   font-family: "Poppins";
@@ -23,10 +27,11 @@ header {
 }
 .logo {
   text-decoration: none;
+  font-family: myfont2;
   color: #775144;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1.8em;
+  font-weight: 100;
+  font-size: 2.3em;
 }
 .navigation a {
   color: #775144;
@@ -69,23 +74,43 @@ section {
   margin-top: 10px;
   margin-bottom: 25px;
 }
-.main-btn {
-  text-decoration: none;
-  color: #775144;
-  background-color: #c09891;
-  font-size: 1.1em;
-  font-weight: 600;
-  display: inline-block;
-  padding: 0.9375em;
-  letter-spacing: 1px;
-  border-radius: 15px;
-  margin-bottom: 17px;
-  transition: 0.5s ease;
+button {
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #fff;
+  border: 0.08em solid #775144;
+  border-radius: 0.3em;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
-.main-btn:hover {
-  background-color: #bea8a7;
-  transform: scale(1.1);
+
+button span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #fff;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #000000;
+  border: 0.08em solid #775144;
+  box-shadow: 0 0.4em 0.1em 0.019em #775144;
 }
+
+button span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #775144;
+}
+
+button span:not(hover) {
+  transition: all 1s;
+}
+
 .social-icons a {
   color: #775144;
   font-size: 1.3em;
