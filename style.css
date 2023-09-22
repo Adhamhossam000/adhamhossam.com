@@ -7,7 +7,9 @@
   font-family: myfont2;
   src: url(ORGANICAL\ PERSONAL\ USE.ttf);
 }
-
+.example::-webkit-scrollbar {
+  display: none;
+}
 * {
   font-family: "Poppins";
   margin: 0;
